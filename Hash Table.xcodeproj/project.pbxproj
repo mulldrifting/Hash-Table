@@ -21,6 +21,8 @@
 		FE0952D6192A733D00A2B30C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0952B8192A733D00A2B30C /* UIKit.framework */; };
 		FE0952DE192A733D00A2B30C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE0952DC192A733D00A2B30C /* InfoPlist.strings */; };
 		FE0952E0192A733D00A2B30C /* Hash_TableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0952DF192A733D00A2B30C /* Hash_TableTests.m */; };
+		FE0952EB192A735200A2B30C /* LLHashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0952EA192A735200A2B30C /* LLHashTable.m */; };
+		FE0952EE192A736000A2B30C /* LLHashBucket.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0952ED192A736000A2B30C /* LLHashBucket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		FE0952DB192A733D00A2B30C /* Hash TableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Hash TableTests-Info.plist"; sourceTree = "<group>"; };
 		FE0952DD192A733D00A2B30C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE0952DF192A733D00A2B30C /* Hash_TableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hash_TableTests.m; sourceTree = "<group>"; };
+		FE0952E9192A735200A2B30C /* LLHashTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHashTable.h; sourceTree = "<group>"; };
+		FE0952EA192A735200A2B30C /* LLHashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHashTable.m; sourceTree = "<group>"; };
+		FE0952EC192A736000A2B30C /* LLHashBucket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLHashBucket.h; sourceTree = "<group>"; };
+		FE0952ED192A736000A2B30C /* LLHashBucket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLHashBucket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 				FE0952C6192A733D00A2B30C /* Main.storyboard */,
 				FE0952C9192A733D00A2B30C /* LLViewController.h */,
 				FE0952CA192A733D00A2B30C /* LLViewController.m */,
+				FE0952E9192A735200A2B30C /* LLHashTable.h */,
+				FE0952EA192A735200A2B30C /* LLHashTable.m */,
+				FE0952EC192A736000A2B30C /* LLHashBucket.h */,
+				FE0952ED192A736000A2B30C /* LLHashBucket.m */,
 				FE0952CC192A733D00A2B30C /* Images.xcassets */,
 				FE0952BB192A733D00A2B30C /* Supporting Files */,
 			);
@@ -250,6 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE0952EB192A735200A2B30C /* LLHashTable.m in Sources */,
+				FE0952EE192A736000A2B30C /* LLHashBucket.m in Sources */,
 				FE0952C5192A733D00A2B30C /* LLAppDelegate.m in Sources */,
 				FE0952C1192A733D00A2B30C /* main.m in Sources */,
 				FE0952CB192A733D00A2B30C /* LLViewController.m in Sources */,

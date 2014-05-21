@@ -7,6 +7,8 @@
 //
 
 #import "LLViewController.h"
+#import "LLHashTable.h"
+#import "LLHashBucket.h"
 
 @interface LLViewController ()
 
@@ -17,7 +19,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    LLHashTable *hashTable = [[LLHashTable alloc] initWithTableSize:20];
+    for (int i = 0; i < 20; i++) {
+        NSString *randomKey = [NSString stringWithFormat:@"%d", arc4random() % 1000];
+        [hashTable setHashObject:[NSNumber numberWithInteger:arc4random() % 200] forKey:randomKey];
+//        NSLog(@"%d",hashTable.count);
+    }
+    
+    for (LLHashBucket *bucket in hashTable.hashArray) {
+        LLHashBucket *tempBucket = bucket;
+        while (tempBucket.obj) {
+            NSLog(@"%@: %@",tempBucket.key, tempBucket.obj);
+            tempBucket = tempBucket.next;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
